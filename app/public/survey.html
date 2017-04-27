@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Survey Page</title>
+	<meta name="generator" content="BBEdit 11.6" />
+
+<!--	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<style>
+h1 { color: BLUE;
+font-size: 50px;
+font-weight: bold;
+}
+
+h3 {font-size: 20px;
+}
+
+
+.form-control {
+width: 40%
+}
+
+.question {
+width: 20%
+}
+
+form {
+margin-left: 15%;
+}
+
+body {
+background-color: yellow;
+}
+
+.btn-block {
+width: 325px;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<form>
+
+<h1> The Office Friend Finder Survey
+</h1>
+
+<br><br>
+<h2> About You: </h2>
+  <div class="form-group">
+    <label for="name">Name (required)</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="photolink">Link to Photo (required)</label>
+    <input type="text" class="form-control" id="photo">
+  </div>
+  
+<br>
+  
+
+<! -- Question 1 --!>
+
+<div class="form-group">
+				<h3> Question 1 </h3>
+                <label for="question1">David Letterman is funnier than Jimmy Fallon</label>
+                <select class="form-control question" id="question1">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+<! -- Question 2 --!>
+<div class="form-group">
+				<h3> Question 2 </h3>
+                <label for="question2">Would rather watch Netflix than go to a movie theater</label>
+                <select class="form-control question" id="question2">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+<! -- Question 3 --!>            
+<div class="form-group">
+				<h3> Question 3 </h3>
+                <label for="question3">Dogs are better than cats</label>
+                <select class="form-control question" id="question3">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+<! -- Question 4 --!>
+<div class="form-group">
+                <h3> Question 4 </h3>
+                <label for="question4">Prefer outdoor activities to indoor activities</label>
+                <select class="form-control question" id="question4">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+<! -- Question 5 --!>
+<div class="form-group">
+				<h3> Question 5 </h3>	
+                <label for="question5">Write a letter vs sending an email</label>
+                <select class="form-control question" id="question5">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+<! -- Question 6 --!>            
+<div class="form-group">
+				<h3> Question 6 </h3>
+                <label for="question6">Prefer online shopping to the mall</label>
+                <select class="form-control question" id="question6">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+<! -- Question 7 --!>            
+<div class="form-group">
+				<h3> Question 7 </h3>
+                <label for="question7">Star Trek is better than Star Wars</label>
+                <select class="form-control question" id="question7">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>                        
+
+<! -- Question 8 --!>                  
+<div class="form-group">
+				<h3> Question 8 </h3>
+                <label for="question8">Enjoy drinking alchohol while socializing with friends</label>
+                <select class="form-control question" id="question8">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>                        
+
+<! -- Question 9 --!>
+<div class="form-group">
+				<h3> Question 9 </h3>
+                <label for="question9">Live music is better than live sports</label>
+                <select class="form-control question" id="question9">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+<! -- Question 10 --!>            
+<div class="form-group">
+				<h3> Question 10 </h3>
+                <label for="question10">Would rather cook at home than go out to dinner</label>
+                <select class="form-control question" id="question10">
+                    <option value="">Please select 1 through 5</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            
+<br>                     
+            
+ 
+  <button type="submit" class="btn btn-primary btn-lg btn-block submit">SUBMIT</button>
+  
+  <br>
+  
+<! -- Modal -- !>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your ideal friend in the office is:</h4>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<! -- Footer -- !>                        
+<footer class="footer">
+	      <div class="container">
+		        <p><a href="/api/friends">API Friends List</a></p>
+	      </div>
+</footer>  
+</form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+$(".submit").on("click", function(event){
+		event.preventDefault();
+		
+		
+		var answerArray = [];
+		
+  		 $('.question').each(function() {
+       	answerArray.push(parseInt($(this).val()));
+   		});
+			
+		console.log(answerArray);	
+	
+		
+		var newFriend = {
+			name: $("#name").val().trim(),
+			photo: $("#photo").val().trim(),
+			scores: answerArray
+			}
+		console.log(newFriend);
+		
+	
+		
+		var currentURL = window.location.origin;
+
+	    $.post("/api/friends", newFriend,
+	    function(bestMatch){
+		console.log(bestMatch);
+		console.log(bestMatch.name);
+		
+		$(".modal-body").html("Your Match is: " + bestMatch.name);
+        $(".modal-body").append("<center><img style='max-width:500px' src='" + bestMatch.photo + "'></center>");
+        $('#myModal').modal('toggle');
+	    	
+	    	// Clear the form when submitting
+    		$('#name').val("");
+			$('#photo').val("");
+			$('#question1').val("");
+			$('#question2').val("");
+			$('#question3').val("");
+			$('#question4').val("");
+			$('#question5').val("");
+			$('#question6').val("");
+			$('#question7').val("");
+			$('#question8').val("")
+			$('#question9').val("")
+			$('#question10').val("")
+			
+
+
+	    });
+
+});
+
+</script>
